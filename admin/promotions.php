@@ -1,10 +1,11 @@
 <?php
+    $_POST["role"] = 'admin';
     include "../service.php";
     // Declare for this page
+    $datenow = date("Y-m-d");
     $_SESSION["title_admin"] = "Promotions";
-
     $data = where("users","username",$_SESSION["username"]);
-    $products = query("SELECT product.id, product.title FROM product WHERE product.id NOT IN (SELECT promotions.product_id FROM promotions)");
+    $products = query("SELECT product.id, product.title FROM product WHERE product.id NOT IN (SELECT promotions.product_id FROM promotions WHERE promotions.end_date > '$datenow')");
     $productss = query("SELECT product.id, product.title FROM product ");
     $datas = query("SELECT product.title, promotions.*, product.price FROM product, promotions WHERE product.id = promotions.product_id;");
 ?>
@@ -340,7 +341,7 @@
                   <div class="row">
                     <div class="col-md-12">
                         <div class="form-group mb-4">
-                            <label class="mr-sm-2" for="inlineFormCustomSelect">Pilih Product</label>
+                            <label class="mr-sm-2" for="inlineFormCustomSelect">Pilih Product promosi</label>
                             <select name="product_id" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                 <?php foreach($products as $product):?>
                                     <option value="<?= $product["id"]?>"><?= $product["title"]?></option>

@@ -1,4 +1,5 @@
 <?php
+    $_POST["role"] = 'admin';
     include "service.php";
     $tipss = get_where("tips", 'status', 1 );
     // Declare for this page

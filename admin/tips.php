@@ -1,4 +1,5 @@
 <?php
+    $_POST["role"] = 'admin';
     include "../service.php";
     // Declare for this page
     $_SESSION["title_admin"] = "Tips";

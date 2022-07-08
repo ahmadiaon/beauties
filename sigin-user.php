@@ -66,7 +66,7 @@
                                     <div class="form-group">
                                         <label class="text-dark" for="uname">email</label>
                                         <input name="email" class="form-control" id="uname" type="text"
-                                            placeholder="enter your email" value="<?php echo ($_SESSION["email"]) ? $_SESSION["email"] : ""; ?>">
+                                            placeholder="enter your email" value="<?php echo (isset($_SESSION["email"])) ? $_SESSION["email"] : ""; ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">

@@ -1,10 +1,12 @@
 <?php
+    
     include "../env.php";
     session_start();
     // Declare for this page
     $_SESSION["title_admin"] = "Login";
     $_SESSION["isLogin"] = false;
     $_SESSION["isAdmin"] = true;
+    $_SESSION["role"] = "admin";
     
 ?>
 
@@ -89,8 +91,9 @@
                                 <div class="col-lg-12">
                                     <div class="form-group">
                                         <label class="text-dark" for="uname">Username</label>
+                                        <input type="hidden" name="role" value="admin">
                                         <input name="username" class="form-control" id="uname" type="text"
-                                            placeholder="enter your username" value="<?php echo ($_SESSION["username"]) ? $_SESSION["username"] : ""; ?>">
+                                            placeholder="enter your username" value="<?php echo (isset($_SESSION["username"])) ? $_SESSION["username"] : ""; ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-12">

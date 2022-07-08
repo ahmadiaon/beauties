@@ -227,12 +227,12 @@ function loginAdmin($data){
         if($data[0]["username"] == $username && $data[0]["password"] == $password){
             $_SESSION["isLogin"] = true;
             $_SESSION["role"] = "admin";
-            header("location: ../admin/index.php");
+            header("location: ".APP_URL."admin/index.php");
         }else{            
-            header("location: ../admin/authentication-login.php");
+            header("location: ".APP_URL."admin/authentication-login.php");
         }
     }else{       
-        header("location: ../admin/authentication-login.php");
+        header("location: ".APP_URL."admin/authentication-login.php");
     }
 }
 function loginUser($data){

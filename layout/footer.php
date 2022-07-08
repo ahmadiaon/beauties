@@ -24,11 +24,9 @@
                     <div class="footer__widget">
                         <h5>Company</h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Departments</a></li>
-                            <li><a href="#">Find a Doctor</a></li>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">News</a></li>
+                            <li><a href="about.php">About Us</a></li>
+                            <li><a href="product.php">Product</a></li>
+                            <li><a href="docter.php">Find a Doctor</a></li>
                         </ul>
                     </div>
                 </div>
@@ -36,11 +34,9 @@
                     <div class="footer__widget">
                         <h5>Quick links</h5>
                         <ul>
-                            <li><a href="#">Facial Fillers</a></li>
-                            <li><a href="#">Breast Surgery</a></li>
-                            <li><a href="#">Body Lifts</a></li>
-                            <li><a href="#">Face & Neck</a></li>
-                            <li><a href="#">Fat Reduction</a></li>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="sigin-user.php">Sign in</a></li>
+                            <li><a href="signup-user.php">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,4 +1,5 @@
 <?php
+    $_POST["role"] = 'admin';
     include "../service.php";
     // Declare for this page
     $_SESSION["title_admin"] = "Products";
@@ -107,7 +108,7 @@
                                       <?= $product["title"]?>
                                       </h5>
                                       <span class="text-muted font-14"
-                                        > <?= $product["specialis"]?> </span
+                                        > <?= $product["treatments"]?> </span
                                       >
                                     </div>
                                   </div>
@@ -274,7 +275,7 @@
                                               <textarea name="description" id="description" class="form-control" rows="3" placeholder="Text Here..."><?= $product["description"]?></textarea>
                                             </div>
                                             <div class="form-group">
-                                              <label for="specialis">status</label>
+                                              <label for="status">status</label>
                                               <select name="status" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                                                   <option <?= ($product["status"] == 1)? "selected":"" ?> value="1">Aktif</option>
                                                   <option <?= ($product["status"] == 0)? "selected":"" ?> value="0">Tidak Aktif</option>
@@ -412,7 +413,7 @@
                   <textarea name="description" id="description" class="form-control" rows="3" placeholder="Text Here..."></textarea>
                 </div>
                 <div class="form-group">
-                  <label for="specialis">status</label>
+                  <label for="status">status</label>
                   <select name="status" class="custom-select mr-sm-2" id="inlineFormCustomSelect">
                       <option value="1">Aktif</option>
                       <option value="0">Tidak Aktif</option>
