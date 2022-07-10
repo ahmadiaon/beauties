@@ -237,7 +237,7 @@
                                                         />
                                                     </div>
                                                     <div class="form-group">
-                                                        <label for="username">Specialis</label>
+                                                        <label for="username">Specialisss</label>
                                                         <input
                                                             class="form-control"
                                                             type="text"
@@ -255,9 +255,9 @@
                                                             <div class="form-input">
                                                                 <div class="preview">
                                                                     <label for="file-ip-1">Upload </label>
-                                                                    <input class="custom-file-input" require name="image_path" type="file" id="file-ip-1" accept="image/*" onchange="showPreview(event);">
-                                                                    <img id="file-ip-1-preview" src="../file/<?= $docter["image_path"] ?>" alt="image" class="img-fluid img-rounded" height="200">
-                                                                </div>
+                                                                    <input class="custom-file-input" require name="image_path" type="file" id="file-ip-1" accept="image/*" onchange="showiew(event);">
+                                                                    <img id="pressview" src="../file/<?= $docter["image_path"] ?>" alt="image" class="img-fluid img-rounded" height="200">
+                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -303,7 +303,7 @@
                                             
                                             <div class="form-group text-center">
                                               <button class="btn btn-primary" name="edit_docter" type="submit">
-                                                Save change
+                                                Save edit
                                               </button>
                                             </div>
                                           </form>
@@ -330,7 +330,7 @@
             <!-- footer -->
             <!-- ============================================================== -->
             <footer class="footer text-center text-muted">
-                All Rights Reserved by Adminmart. Designed and Developed by <a
+                All Rights Reservesssd by Adminmart. Designed and Developed by <a
                     href="https://wrappixel.com">WrapPixel</a>.
             </footer>
             <!-- ============================================================== -->
@@ -341,15 +341,7 @@
         <!-- End Page wrapper  -->
         <!-- ============================================================== -->
     </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
-    <!-- ============================================================== -->
-
-
+   
     <!-- Add Docter modal content -->
     <div
         id="signup-modal"
@@ -465,9 +457,6 @@
     </div>
 
    
-                  <!-- /.modal -->
-
-
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="assets/libs/popper.js/dist/umd/popper.min.js"></script>
@@ -490,7 +479,7 @@
     <script src="dist/js/pages/datatable/datatable-basic.init.js"></script>
   
         <script type="text/javascript">
-        function showPreview(event){
+        function showiew(event){
         if(event.target.files.length > 0){
           $(document).on("change", ".custom-file-input", function() {
             var myImg = this.files[0];
@@ -501,8 +490,8 @@
               alert("Not an image");
             }else{
               var src = URL.createObjectURL(event.target.files[0]);
-            
-              var preview = document.getElementById("file-ip-1-preview");
+              console.log(src)
+              var preview = document.getElementById("pressview");
               preview.src = src;
               preview.style.display = "block";
             }

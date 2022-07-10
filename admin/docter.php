@@ -2,9 +2,9 @@
     $_POST["role"] = 'admin';
     include "../service.php";
     // Declare for this page
-    $_SESSION["title_admin"] = "Products";
+    $_SESSION["title_admin"] = "Docters";
 
-    $products = getAll("product");
+    $products = getAll("docters");
     // dd($_SESSION["user"]);
 ?>
 
@@ -68,17 +68,22 @@
                                 <th
                                   class="border-0 font-14 font-weight-medium text-muted"
                                 >
-                                  product
+                                  Docters
                                 </th>
                                 <th
                                   class="border-0 font-14 font-weight-medium text-muted px-2"
                                 >
-                                  price
+                                  facebook
                                 </th>
                                 <th
                                   class="border-0 font-14 font-weight-medium text-muted text-center"
                                 >
-                                  status
+                                  instagram
+                                </th>
+                                <th
+                                  class="border-0 font-14 font-weight-medium text-muted text-center"
+                                >
+                                  twitter
                                 </th>
                                 <th
                                   class="border-0 font-14 font-weight-medium text-muted text-center"
@@ -105,19 +110,22 @@
                                       <h5
                                         class="text-dark mb-0 font-16 font-weight-medium"
                                       >
-                                      <?= $product["title"]?>
+                                      <?= $product["name"]?>
                                       </h5>
                                       <span class="text-muted font-14"
-                                        > <?= $product["treatments"]?> </span
+                                        > <?= $product["specialis"]?> </span
                                       >
                                     </div>
                                   </div>
                                 </td>
                                 <td class="border-top-0 text-muted px-2 py-4 font-14">
-                                <?= $product["price"]?>
+                                <?= $product["facebook"]?>
                                 </td>
                                 <td class="border-top-0 text-muted px-2 py-4 font-14">
-                                <?= $product["status"]?>
+                                <?= $product["instagram"]?>
+                                </td>
+                                <td class="border-top-0 text-muted px-2 py-4 font-14">
+                                <?= $product["twitter"]?>
                                 </td>
                                 <td class="border-top-0 px-2 py-4">
                                   <div class="popover-icon">
@@ -130,7 +138,7 @@
                                     <a  data-toggle="modal"
                                         data-target="#danger-header-modal-<?= $product["id"]?>"
                                       class="btn btn-danger rounded-circle btn-circle font-12 popover-item"
-                                      href="delete/<?= $product["title"]?>"
+                                      href="delete/<?= $product["name"]?>"
                                       ><i class="icon-trash"></i></a>                              
                                   </div>
 
@@ -227,7 +235,7 @@
                                                             id="title"
                                                             required=""
                                                             name="title" value="<?= $product["title"] ?>"
-                                                            placeholder="name"
+                                                            placeholder="Michael Zenaty"
                                                         />
                                                     </div>
                                                     <div class="form-group">
@@ -432,6 +440,10 @@
         </div>
         <!-- /.modal-dialog -->
     </div>
+
+   
+                  <!-- /.modal -->
+
 
     <script src="assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->

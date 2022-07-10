@@ -332,6 +332,8 @@
     </div>
         <div class="container">
             <div class="row">
+              <?php if($promotions != null){?>
+                
                 <?php foreach($promotions as $promotion) :?>
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="pricing__item">
@@ -353,6 +355,14 @@
                         </div>
                     </div>
                 <?php endforeach?>
+              <?php }else{ ?>
+                <div class="container">
+                  <div class="row justify-content-center">
+                    <h1>No Promotions found</h1>
+                  </div>
+                </div>
+
+              <?php } ?>
             </div>
         </div>
     </section>

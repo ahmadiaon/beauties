@@ -368,7 +368,7 @@ function createDocter($data){
         $data["image_path"] = uploadImage($keys);
         $result = insert("docters", $data);
         if($result){
-            header("location: ../admin/docters.php");
+            header("location: admin/docters.php");
         }        
     }
 }
@@ -387,19 +387,19 @@ function editDocter($data){
 
         $result = update("docters", $data, $id);
         if($result){
-            header("location: ../admin/docters.php");
+            header("location: admin/docters.php");
         }        
     }else{
         $result = update("docters", $data, $id);
         if($result){
-            header("location: ../admin/docters.php");
+            header("location: admin/docters.php");
         } 
     }
 }
 function deleteDocter($data){
     $result = delete("docters", $data);
     if($result){
-        header("location: ../admin/docters.php");
+        header("location: admin/docters.php");
     }
 }
 // ======================= M E M B E R =
@@ -494,7 +494,7 @@ function checkOut($data){
 function deleteReservation($data){
     $result = delete("reservations", $data);
     if($result){
-        header("location: ../admin/reservations.php");
+        header("location: admin/reservations.php");
     }
 }
 function updateReservation($data){  
@@ -548,14 +548,14 @@ function createProduct($data){
         $data["image_path"] = uploadImage($keys);
         $result = insert("product", $data);
         if($result){
-            header("location: ../admin/products.php");
+            header("location: admin/products.php");
         }        
     }
 }
 function deleteProduct($data){
     $result = delete("product", $data);
     if($result){
-        header("location: ../admin/products.php");
+        header("location: admin/products.php");
     }
 }
 function editProduct($data){  
@@ -574,12 +574,12 @@ function editProduct($data){
 
         $result = update("product", $data, $id);
         if($result){
-            header("location: ../admin/products.php");
+            header("location: admin/products.php");
         }        
     }else{
         $result = update("product", $data, $id);
         if($result){
-            header("location: ../admin/products.php");
+            header("location: admin/products.php");
         } 
     }
 }
