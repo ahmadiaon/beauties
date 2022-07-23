@@ -59,7 +59,7 @@
                             <img src="admin/assets/images/big/icon.png" alt="wrapkit">
                         </div>
                         <h2 class="mt-3 text-center">Sign In</h2>
-                        <p class="text-center">Enter your email address and password to access admin panel.</p>
+                        <p class="text-center">Enter your email address and password.</p>
                         <form class="mt-4" action="service.php" method="post">
                             <div class="row">
                                 <div class="col-lg-12">

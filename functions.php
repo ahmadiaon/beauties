@@ -1,17 +1,18 @@
 <?php
-
+// die;
 function _query($data){
     global $conn;
     return mysqli_query($conn, $data);
 }
 function _validation(){
+    // dd($_POST['role']);
     if($_POST['role']== 'guest'){
         if(isset($_SESSION['role'])){
             // $_SESSION['role']
         }else{
             $_SESSION['role'] = 'guest';
         }
-        // dd($_SESSION['role']);
+        // 
     }else if($_POST['role']== 'member'){
         
         if(isset($_SESSION['role'])){
@@ -407,13 +408,13 @@ function createMember($data){
     $result = insert("members", $data);
     // dd($result);
     if($result){
-        header("location: ../admin/members.php");
+        header("location: admin/members.php");
     }
 }
 function deleteMember($data){
     $result = delete("members", $data);
     if($result){
-        header("location: ../admin/members.php");
+        header("location: admin/members.php");
     }
 }
 function editMember($data){  
@@ -422,7 +423,7 @@ function editMember($data){
     
     $result = update("members", $data, $id);
     if($result){
-        header("location: ../admin/members.php");
+        header("location: admin/members.php");
     }        
    
 }
@@ -431,13 +432,13 @@ function editMember($data){
 function createTips($data){   
     $result = insert("tips", $data);
     if($result){
-        header("location: ../admin/tips.php");
+        header("location: admin/tips.php");
     }
 }
 function deleteTips($data){
     $result = delete("tips", $data);
     if($result){
-        header("location: ../admin/tips.php");
+        header("location: admin/tips.php");
     }
 }
 function editTips($data){  
@@ -446,7 +447,7 @@ function editTips($data){
     
     $result = update("tips", $data, $id);
     if($result){
-        header("location: ../admin/tips.php");
+        header("location: admin/tips.php");
     }
 }
 
@@ -457,7 +458,7 @@ function editHome($data){
     
     $result = update("profile", $data, $id);
     if($result){
-        header("location: ../manage_index.php");
+        header("location: manage_index.php");
     }
 }
 

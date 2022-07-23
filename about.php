@@ -79,8 +79,8 @@
                 <div class="col-lg-6 col-md-6">
                 <div class="footer__map">
                     <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48158.305462977965!2d-74.13283844036356!3d41.02757295168286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2e440473470d7%3A0xcaf503ca2ee57958!2sSaddle%20River%2C%20NJ%2007458%2C%20USA!5e0!3m2!1sen!2sbd!4v1575917275626!5m2!1sen!2sbd"
-                      height="222"
+                      src="https://maps.google.com/maps?q=tiffany%20palangka&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                      height="322"
                       style="border: 0"
                       allowfullscreen=""
                     ></iframe>
@@ -90,75 +90,30 @@
                   <div class="about__text">
                     <div class="section-title">
                       <span>ABOUT OUR CLINIC</span>
-                      <h2>Welcom to the Aesthetic</h2>
+                      <h2>Welcom to the tiffany</h2>
                     </div>
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                      eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                      Klinik kecantikan dan kesehatan kulit. yang Ditangani oleh dokter spesialis kulit kecantikan yg berpengalaman.
                     </p>
                     <ul>
                       <li>
-                        <i class="fa fa-check-circle"></i> Routine and medical care
+                        <i class="fa fa-check-circle"></i> Konsultasi Dokter Spesialis Kulit
                       </li>
                       <li>
-                        <i class="fa fa-check-circle"></i> Excellence in Healthcare
-                        every
+                        <i class="fa fa-check-circle"></i> Produk Kecantikan
                       </li>
                       <li>
-                        <i class="fa fa-check-circle"></i> Building a healthy
-                        environment
+                        <i class="fa fa-check-circle"></i> Perawatan wajah dan tubuh
                       </li>
                     </ul>
-                    <a href="#" class="primary-btn normal-btn">Contact us</a>
+                    <a href="product.php" class="primary-btn normal-btn">Our Service</a>
                   </div>
                 </div>
               </div>
             </div>
           </section>
     <!-- About Section End -->
-    <!-- About Section Begin -->
-    <section class="about spad">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="about__text">
-              <div class="section-title">
-                <span>ABOUT OUR CLINIC</span>
-                <h2>Welcom to the Aesthetic</h2>
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <ul>
-                <li>
-                  <i class="fa fa-check-circle"></i> Routine and medical care
-                </li>
-                <li>
-                  <i class="fa fa-check-circle"></i> Excellence in Healthcare
-                  every
-                </li>
-                <li>
-                  <i class="fa fa-check-circle"></i> Building a healthy
-                  environment
-                </li>
-              </ul>
-              <a href="#" class="primary-btn normal-btn">Contact us</a>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <div class="about__video set-bg" data-setbg="img/about-video.jpg">
-              <a
-                href="https://www.youtube.com/watch?v=PXsuI67s2AA"
-                class="play-btn video-popup"
-                ><i class="fa fa-play"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- About Section End -->
+    
 
     <!-- Chooseus Section Begin -->
     <section class="chooseus spad">
@@ -177,8 +132,7 @@
               <img src="img/icons/ci-1.png" alt="" />
               <h5>Advanced equipment</h5>
               <p>
-                Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod
-                tempor cididunt facilisis.
+              We use advanced technology and medical grade equipment for results you can see and trust.
               </p>
             </div>
           </div>
@@ -187,8 +141,7 @@
               <img src="img/icons/ci-2.png" alt="" />
               <h5>Qualified doctors</h5>
               <p>
-                Lorem ipsum amet, consectetur adipiscing elit, sed do eiusmod
-                tempor cididunt facilisis.
+              We have a team of fully qualified Doctors, Nurses, and visiting specialists all dedicated to bringing you quality care.
               </p>
             </div>
           </div>
